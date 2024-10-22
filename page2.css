@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color:darksalmon;
+    /* background-color: gainsboro; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+img{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 99;
+    width: 350px;
+}
+.scroll{
+    top:25% ;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+.scroll h1{ 
+    display: inline-block;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    animation-name: scroll;
+    animation-duration: 0.99s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.scroll2{
+    top:45% ;
+    position: absolute;
+    z-index: 100;
+    -webkit-text-stroke-width:1px ;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    width: 100%;
+    height: 100px;
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroll2::-webkit-scrollbar{
+    display: none;
+}
+.scroll2 h1{ 
+    display: inline-block;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    animation-name: scroll;
+    animation-duration: 0.99s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scroll3{
+    top:65% ;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroll3::-webkit-scrollbar{
+    display: none;
+}
+.scroll3 h1{ 
+    display: inline-block;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    animation-name: scroll;
+    animation-duration: 0.99s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+.text{
+    top: 14%;
+    font-size: 22px;
+    position: absolute;
+    z-index: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    color: black;
+}
+.nav{
+    left: 20px;
+    width: 500px;
+    top: 40px;
+    display:flex;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+}
+.nav img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+}
+.nav h4{
+ font-size: 15px;
+ position: absolute;
+ z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.652);
+
+}
+@keyframes scroll{
+    0%{
+        transform:translateX(calc(-100px - 10px));
+    }
+    100%{
+        transform:translateX(0);
+
+    }
+}
